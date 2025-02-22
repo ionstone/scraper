@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ### Clone the Repository:
 ```bash
-git clone <repository_url>
+git clone https://github.com/ionstone/scraper
 cd web_scraper
 ```
 
