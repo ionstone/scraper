@@ -117,7 +117,18 @@ await page.wait_for_timeout(5000)  # Increased timeout to allow content to load
 async def scroll_to_load_all_products(page, scroll_delay=2):
     await page.evaluate("window.scrollTo(0, document.body.scrollHeight);")
 ```
+### **Challenge 2: Retrieving Product Details**
+Sometimes, product details failed to load due to **network issues** or **delays in rendering**.
 
+#### **Solution:**
+- Implemented a **robust loading mechanism** that retries page loading if the product details do not appear within a specified timeout period.
+
+```python
+if not await load_page_with_retries(page, product_url, ".product-Details-page-root"):
+    print(f"⚠️ Failed to load product page: {product_url}")
+```
+
+---
 ---
 
 ## Sample Output
