@@ -1,7 +1,5 @@
 # Web Scraping Assignment
 
-## 📍 ScrapeMonster.tech | Estonia
-
 ### Task Overview
 The goal of this assignment is to scrape product data from the **Tops Online** website, specifically from various categories. The extracted data will be structured in **JSON format** and will include details such as:
 
